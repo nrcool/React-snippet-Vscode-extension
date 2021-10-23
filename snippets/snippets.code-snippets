@@ -1,0 +1,163 @@
+{
+    "reactFuntionalExportComponent":{
+        "prefix": "cfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Creates a React Functional Component with ES7 module system"
+    },
+    "reactClassExportComponent": {
+        "prefix": "ccc",
+        "body": [
+          "import React, { Component } from 'react'",
+          "",
+          "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+          "\trender() {",
+          "\t\treturn (",
+          "\t\t\t<div>",
+          "\t\t\t\t$0",
+          "\t\t\t</div>",
+          "\t\t)",
+          "\t}",
+          "}",
+          "",
+          "export default ${1:${TM_FILENAME_BASE}}",
+          ""
+        ],
+        "description": "Creates a React component class with ES7 module system"
+      },
+      "reactArrowFunctionComponent": {
+        "prefix": "cafc",
+        "body": [
+          "import React from 'react'",
+          "",
+          "export const ${1:${TM_FILENAME_BASE}} = () => {",
+          "\treturn (",
+          "\t\t<div>",
+          "\t\t\t$0",
+          "\t\t</div>",
+          "\t)",
+          "}",
+          ""
+        ],
+        "description": "Creates a React Arrow Function Component with ES7 module system"
+      },
+      "reactClassPureComponent": {
+        "prefix": "cpc",
+        "body": [
+          "import React, { PureComponent } from 'react'",
+          "",
+          "export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+          "\trender() {",
+          "\t\treturn (",
+          "\t\t\t<div>",
+          "\t\t\t\t$0",
+          "\t\t\t</div>",
+          "\t\t)",
+          "\t}",
+          "}",
+          ""
+        ],
+        "description": "Creates a React pure component class with ES7 module system"
+      },
+      "reactFunctionMemoComponent": {
+        "prefix": "cmc",
+        "body": [
+          "import React, { memo } from 'react'",
+          "",
+          "export default memo(function ${1:${TM_FILENAME_BASE}}() {",
+          "\treturn (",
+          "\t\t<div>",
+          "\t\t\t$0",
+          "\t\t</div>",
+          "\t)",
+          "})",
+          ""
+        ],
+        "description": "Creates a React Memo Function Component with ES7 module system"
+      },
+      "import": {
+        "prefix": "impd",
+        "body": "import ${1:moduleName} from '${1:module}'$0"
+      },
+      "importNoModuleName": {
+        "prefix": "impn",
+        "body": "import '${1:module}' from '${1:module}'  "
+      },
+      "classConstructor": {
+        "prefix": "crc",
+        "body": [
+          "constructor(props) {",
+          "\tsuper(props)",
+          "",
+          "\tthis.state = {",
+          "\t\t $0",
+          "\t}",
+          "}",
+          ""
+        ],
+        "description": "Adds a default constructor for it('', () => {})the class that contains props as arguments"
+      },
+      "componentDidMount": {
+        "prefix": "ccdm",
+        "body": ["componentDidMount() {", "\t$0", "}", ""],
+        "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
+      },
+      "shouldComponentUpdate": {
+        "prefix": "cscu",
+        "body": ["shouldComponentUpdate(nextProps, nextState) {", "\t$0", "}", ""],
+        "description": "Invoked before rendering when new props or state are being received. "
+      },
+      "componentDidUpdate": {
+        "prefix": "ccdu",
+        "body": ["componentDidUpdate(prevProps, prevState) {", "\t$0", "}", ""],
+        "description": "Invoked immediately after the component's updates are flushed to the DOM."
+      },
+      "componentWillUnmount": {
+        "prefix": "ccwu",
+        "body": ["componentWillUnmount() {", "\t$0", "}", ""],
+        "description": "Invoked immediately before a component is unmounted from the DOM."
+      },
+      "getDerivedStateFromProps": {
+        "prefix": "cgd",
+        "body": ["static getDerivedStateFromProps(props, state) {", "\t${1}", "}"],
+        "description": "Invoked right before calling the render method, both on the initial mount and on subsequent updates."
+      },
+      "getSnapshotBeforeUpdate": {
+        "prefix": "cgsbu",
+        "body": [
+          "getSnapshotBeforeUpdate = (prevProps, prevState) => {",
+          "\t$0",
+          "}",
+          ""
+        ],
+        "description": "Called right before mutations are made (e.g. before the DOM is updated)"
+      },
+      "useStateHook":{
+        "prefix": "us",
+        "body":[
+            "const [${1}value, ${1}SetValue] = useState(initialState)"
+        ],
+        "description": "Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
+      },
+      "useEffect":{
+          "prefix":"ue",
+          "body":[
+            "useEffect(()=>{",
+                "/t/$0",
+                "return ()=>{} ",
+                "/t/t/t },[])"
+          ]
+      }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "es7-react-snippets",
+    "displayName": "ES7/React-Snippets",
+    "description": "A Simple Extension For React",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "directory": ""
+    },
+    "icon":"icon.png",
+    "author": {
+        "name": "Naqvi"
+    },
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
