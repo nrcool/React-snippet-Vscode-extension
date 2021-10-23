@@ -6,6 +6,21 @@ JavaScript and React/Redux snippets in ES7+ with Babel plugin features for  [VS 
 
 ## Installation
 
+## Installation
+
+### Visual Studio Marketplace
+
+Launch  _Quick Open_:
+
+-   [_Linux_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf"):  `Ctrl+P`
+-   [_macOS_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"):  `⌘P`
+-   [_Windows_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"):  `Ctrl+P`
+
+Paste the following command and press  `Enter`:
+
+```js
+ext install naqvi.es7-react-snippets
+``` 
 ### Visual Studio Marketplace
 
 Launch  _Quick Open_:
@@ -61,3 +76,80 @@ React 17 is currently supported by  `_`  prefix.
 |--|--|
 |`us→ `  | useState hook |
 |`ue→ `  | useEffect hook |
+
+
+### React Components
+
+`cfc`
+
+```js
+import React from 'react'
+
+export default function Example() {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+``` 
+
+`ccc`
+
+```js
+import React, { Component } from 'react'
+
+export default class Example extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
+}
+``` 
+
+`cafc`
+
+```js
+import React from 'react'
+
+export const Example = () => {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+``` 
+
+`cpc`
+
+```js
+import React, { PureComponent } from 'react'
+
+export class Example extends PureComponent {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
+}
+``` 
+`cmc`
+
+```js
+
+import React, { memo } from 'react'
+
+const Example = memo(function Example(props) {
+    return (
+        <div>
+            
+        </div>
+    )
+})
+``` 
