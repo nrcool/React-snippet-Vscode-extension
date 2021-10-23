@@ -2,7 +2,7 @@
     "name": "es7-react-snippets",
     "displayName": "ES7/React-Snippets",
     "description": "A Simple Extension For React",
-    "publisher": "Naqvi",
+    "publisher": "naqvi",
     "version": "1.0.0",
     "repository": {
         "type": "git",
@@ -10,7 +10,7 @@
     },
     "icon":"icon.png",
     "author": {
-        "name": "Naqvi"
+        "name": "naqvi"
     },
     "engines": {
         "vscode": "^1.61.0"
