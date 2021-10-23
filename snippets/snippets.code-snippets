@@ -158,6 +158,7 @@
                 "/t/$0",
                 "return ()=>{} ",
                 "/t/t/t },[])"
-          ]
+          ],
+          "description": "The Effect Hook lets you perform side effects in function components:"
       }
 }

@@ -1,65 +1,63 @@
-# es7-react-snippets README
 
-This is the README for your extension "es7-react-snippets". After writing up a brief description, we recommend including the following sections.
 
-## Features
+# VS Code ES7 React snippets
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+JavaScript and React/Redux snippets in ES7+ with Babel plugin features for  [VS Code](https://code.visualstudio.com/ "https://code.visualstudio.com/")
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+### Visual Studio Marketplace
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Launch  _Quick Open_:
 
-## Requirements
+-   [_Linux_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf"):  `Ctrl+P`
+-   [_macOS_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"):  `⌘P`
+-   [_Windows_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"):  `Ctrl+P`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
+## Supported languages (file extensions)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+-   JavaScript (.js)
+-   JavaScript React (.jsx)
 
-For example:
+## Snippets info
 
-This extension contributes the following settings:
+Every space inside  `{ }`  and  `( )`  means that this is pushed into next line :)  `$`  represent each step after  `tab`.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+React 17 is currently supported by  `_`  prefix.
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
+### React
 
-Users appreciate release notes as you update your extension.
+|Prefix  | Description  |
+|--|--|
+|`cfc→ `  | create react functional component |
+|`ccc→ `  | create react class component |
+|`cafc→ `  | create arrow functional component |
+|`cpc→ `  | create pure component |
+|`cmc→ `  | create memo component |
 
-### 1.0.0
 
-Initial release of ...
+### Imports
+|Prefix  | Description  |
+|--|--|
+|`impd→ `  | import default export |
+|`impn→ `  | import named export |
 
-### 1.0.1
+### React lifeCycle Methods
+|Prefix  | Description  |
+|--|--|
+|`ccdm→ `  | create componentDidMount method |
+|`cscu→ `  |create shouldComponentUpdate method  |
+|`ccdu→ `  | create componentDidUpdate method |
+|`ccwu→ `  | create componentWillUnmount method |
+|`cgd→ `  | create getDerivedStateFromProps method |
+|`cgsbu→ `  | create getSnapshotBeforeUpdate method |
+|`crc→ `  | create react constructor component |
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### React Hooks
+|Prefix  | Description  |
+|--|--|
+|`us→ `  | useState hook |
+|`ue→ `  | useEffect hook |
