@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "repository": {
         "type": "git",
-        "directory": ""
+        "url": "https://github.com/nrcool/React-snippet-Vscode-extension"
     },
     "icon":"icon.png",
     "author": {
