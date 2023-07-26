@@ -156,8 +156,8 @@
           "body":[
             "useEffect(()=>{",
                 "\t$0",
-                "return ()=>{ //cleanup code} ",
-                "\t\t\t },[])"
+                "return ()=>{ /* cleanup code */ }",
+                "\t },[])"
           ],
           "description": "The Effect Hook lets you perform side effects in function components:"
       },
