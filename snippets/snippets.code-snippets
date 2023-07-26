@@ -147,7 +147,7 @@
       "useStateHook":{
         "prefix": "us",
         "body":[
-            "const [${1}value, ${1}SetValue] = useState(initialState)"
+            "const [${1}value, set${1}Value] = useState(initialState)"
         ],
         "description": "Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
       },
@@ -155,10 +155,17 @@
           "prefix":"ue",
           "body":[
             "useEffect(()=>{",
-                "/t/$0",
-                "return ()=>{} ",
-                "/t/t/t },[])"
+                "\t$0",
+                "return ()=>{ //cleanup code} ",
+                "\t\t\t },[])"
           ],
           "description": "The Effect Hook lets you perform side effects in function components:"
-      }
+      },
+      "createContext":{
+        "prefix":"cc",
+        "body":[
+          "const Context = createContext(null)"
+        ],
+        "description": "create react context to manage global scope"
+    },
 }
